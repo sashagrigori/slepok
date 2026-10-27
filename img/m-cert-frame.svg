@@ -1,0 +1,13 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="379.003" height="401.95" viewBox="0 0 379.003 401.95" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Exclude">
+<use xlink:href="#stroke0_0_8" fill="#FFFEF9"/>
+<mask id="stroke1_0_8" maskUnits="userSpaceOnUse" x="-0.998609" y="-0.998609" width="381" height="403" fill="black">
+<rect fill="white" x="-0.998609" y="-0.998609" width="381" height="403"/>
+<use xlink:href="#stroke0_0_8"/>
+</mask>
+<path d="M377.001 399.949H2.00139V2.00139H377.001V399.949ZM44.0375 17.9975C28.5628 17.9975 16.018 30.5423 16.018 46.017V356.978C16.018 372.453 28.5628 384.997 44.0375 384.997H334.998C350.473 384.997 363.018 372.453 363.018 356.978V46.017C363.018 30.5423 350.473 17.9975 334.998 17.9975H44.0375Z" stroke-width="4.00278" stroke="#101010" mask="url(#stroke1_0_8)"/>
+</g>
+<defs>
+<path id="stroke0_0_8" d="M377.001 399.949H2.00139V2.00139H377.001V399.949ZM44.0375 17.9975C28.5628 17.9975 16.018 30.5423 16.018 46.017V356.978C16.018 372.453 28.5628 384.997 44.0375 384.997H334.998C350.473 384.997 363.018 372.453 363.018 356.978V46.017C363.018 30.5423 350.473 17.9975 334.998 17.9975H44.0375Z"/>
+</defs>
+</svg>

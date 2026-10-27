@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Слепок — гончарная студия (учебный проект)</title>
+<meta name="description" content="Лендинг гончарной студии экспериментальной керамики «Слепок». Учебный проект UX/UI-дизайнера Александры Зянчуриной.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="img/star-42.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+  // the layout is drawn on a fixed 1440 (desktop) or 375 (phone) canvas and zoomed to the window width
+  (function(){ const r=document.documentElement; function fit(){ const w=r.clientWidth, m=w<760; r.classList.toggle("m",m); r.style.setProperty("--z", m ? Math.min(w/375,1.8) : w/1440); } fit(); addEventListener("resize",fit); })();
+</script>
+</head>
+<body>
+
+<header class="top" id="top">
+  <nav class="top-nav">
+    <a href="#mk" class="t38 lnk">мк</a><a href="#courses" class="t38 lnk">курсы</a><a href="#party" class="t38 lnk">мероприятия</a><a href="#cert" class="t38 lnk">сертификат</a>
+  </nav>
+  <a href="#top" class="top-logo" aria-label="Слепок"><img src="img/logo-header.svg" alt="Слепок" width="240" height="36"></a>
+  <a href="#where" class="t38 lnk top-addr">спб, глиняная 7/3</a>
+  <button class="btn coral top-btn" data-form>записаться</button>
+  <button class="burger mo" aria-label="меню" data-menu><img src="img/m-burger.svg" alt="" width="24" height="24"></button>
+  <a class="top-phone mo" href="#" data-form aria-label="записаться"><img src="img/m-phone.svg" alt="" width="32" height="32"></a>
+</header>
+<div class="ticker mo m-addr" data-word="спб, глиняная 7/3|ежедневно с 12:00 до 21:00"></div>
+
+<main>
+
+<!-- hero: plays the «main screen animation» from the prototype on load -->
+<section class="hero" id="hero">
+  <img class="hero-star spin" src="img/star-68.svg" alt="" width="68" height="68">
+  <p class="t38 hero-kicker a">гончарная студия</p>
+  <h1 class="hero-title"><img src="img/h-slepok.svg" alt="Слепок" width="654" height="98"></h1>
+  <nav class="hero-menu a">
+    <a href="#mk" class="t38">мастер-классы</a><a href="#courses" class="t38">курсы</a><a href="#party" class="t38">мероприятия</a><a href="#cert" class="t38">сертификат</a><a href="#" class="t38" data-form>записаться</a>
+  </nav>
+  <img class="hero-cup a" src="img/cup.webp" alt="Пластилиновая кружка в очках-звёздах" width="784" height="637">
+  <p class="t38 hero-lead a">с нами ты сможешь реализовать смелые керамические идеи, вдохновиться и просто отлично провести время в уютной компании</p>
+  <aside class="hero-side a">
+    <span class="pill milk t28">ближайшие мк</span>
+    <a class="card-s" href="#" data-form="мастер-класс"><img src="img/g-candle.webp" alt=""><span><b class="t38">подсвечник</b><i class="t28">24 января 12:00</i></span></a>
+    <a class="card-s" href="#" data-form="мастер-класс"><img src="img/g-bowl.webp" alt=""><span><b class="t38">боул</b><i class="t28">24 января 16:00</i></span></a>
+  </aside>
+  <div class="mo hero-mbtn"><button class="btn coral" data-form>записаться</button></div>
+  <div class="hero-line"></div>
+  <div class="hero-info a">
+    <img src="img/star-42.svg" alt="" width="42" height="42"><span class="t38">санкт-петербург, глиняная 7/3</span>
+    <img src="img/star-42.svg" alt="" width="42" height="42"><span class="t38">ежедневно с 12:00 до 21:00</span>
+    <img src="img/star-42.svg" alt="" width="42" height="42"><span class="t38">мастер-классы и курсы</span>
+  </div>
+</section>
+
+<!-- word cloud with floating pills -->
+<section class="cloud" id="about">
+  <div class="cloud-text"><p class="t38" id="cloudText"></p></div>
+  <span class="btn peach cloud-pill static" style="left:-33px;top:129px">процесс</span>
+  <span class="btn peach cloud-pill static" style="left:1124px;top:94px">слепки</span>
+  <span class="btn peach cloud-pill static" style="left:1178px;top:397px">мастера</span>
+  <span class="btn peach cloud-pill static" style="left:356px;top:432px">локация</span>
+  <button class="btn coral cloud-cta" data-form>записаться</button>
+</section>
+
+<section class="photos" id="photos" aria-label="Студия">
+  <div class="photos-track" id="photosTrack">
+    <figure class="ph"><img src="img/photo-1.webp" alt="" style="width:181.72%;height:109.11%;left:-62.3%;top:-4.56%"></figure>
+    <figure class="ph"><img src="img/photo-2.webp" alt="" class="cover"></figure>
+    <figure class="ph"><img src="img/photo-3.webp" alt="" style="width:109.78%;height:148.3%;left:-4.89%;top:-17.55%"></figure>
+    <figure class="ph"><img src="img/photo-1.webp" alt="" style="width:181.72%;height:109.11%;left:-7.96%;top:-4.56%"></figure>
+    <figure class="ph"><img src="img/photo-4.webp" alt="" class="cover"></figure>
+  </div>
+  <div class="mo m-btnrow"><button class="btn coral" data-form>записаться</button></div>
+</section>
+
+<div class="ticker line-b" data-word="слепим по любому поводу"></div>
+
+<section class="mk" id="mk">
+  <h2 class="h2 mk-h"><img class="d" src="img/h-masterclasses.svg" alt="Мастер-классы" width="1393" height="98"><img class="mo" src="img/m-h-mk.svg" alt="Мастер-классы" width="256" height="80"></h2>
+  <div class="rule" style="top:179px"></div>
+  <span class="pill milk t38 big-pill" style="top:219px">групповые</span>
+  <div class="mk-row">
+    <a class="card-m" href="#" data-form="мастер-класс"><img src="img/g-candle.webp" alt=""><span><b class="t38">подсвечник</b><i class="t28">24 января 12:00</i></span></a>
+    <a class="card-m" href="#" data-form="мастер-класс"><img src="img/g-bowl.webp" alt=""><span><b class="t38">боул</b><i class="t28">24 января 16:00</i></span></a>
+    <a class="card-m" href="#" data-form="мастер-класс"><img src="img/g-vase.webp" alt=""><span><b class="t38">ваза</b><i class="t28">25 января 12:00</i></span></a>
+    <a class="card-m" href="#" data-form="мастер-класс"><img src="img/g-mug.webp" alt=""><span><b class="t38">кружка</b><i class="t28">25 января 16:00</i></span></a>
+  </div>
+</section>
+
+<section class="ind">
+  <span class="pill milk t38 big-pill" style="top:40px">индивидуальные</span>
+  <div class="ind-row">
+    <a class="card-b" href="#" data-form="мастер-класс"><img src="img/i-cup.webp" alt=""><span><b class="t38">ручная лепка</b><i class="t28">2,5 часа — 3 800 р</i></span></a>
+    <a class="card-b" href="#" data-form="мастер-класс"><img src="img/i-stripe.webp" alt=""><span><b class="t38">гончарный круг</b><i class="t28">2,5 часа — 3 800 р</i></span></a>
+    <a class="card-b contain" href="#" data-form="мастер-класс"><img src="img/i-heart.webp" alt=""><span><b class="t38">парное занятие</b><i class="t28">2,5 часа — 7 000 р</i></span></a>
+  </div>
+  <span class="badge wobble" style="left:1233px;top:90px"><img src="img/badge-star.svg" alt=""><b class="t28">свидание</b></span>
+</section>
+
+<section class="courses" id="courses">
+  <p class="t38 kicker" style="top:40px">или попробуй</p>
+  <h2 class="h2" style="top:89px"><img src="img/h-courses.svg" alt="Курсы" width="577" height="98"></h2>
+  <div class="rule" style="top:229px"></div>
+  <div class="vrule"></div>
+  <div class="course" style="left:165px">
+    <span class="burst"><img src="img/burst-lime.svg" alt=""><b class="t28">база</b></span>
+    <p class="t28">обучение с нуля, простые формы, ручная лепка, основы гончарного круга и глазурования</p>
+    <p class="t28 price">месяц — 13 000 р</p>
+    <button class="btn blue" data-form="курс">записаться</button>
+  </div>
+  <div class="course" style="left:884px">
+    <span class="burst"><img src="img/burst-blue.svg" alt=""><b class="t28">pro</b></span>
+    <p class="t28">продолжающим, сложные формы, продвинутые техники лепки и глазурования</p>
+    <p class="t28 price">месяц — 13 000 р</p>
+    <button class="btn blue" data-form="курс">записаться</button>
+  </div>
+</section>
+
+<!-- «celebration animation»: four cards fall onto the table one by one -->
+<section class="party" id="party">
+  <p class="t38 kicker" style="top:38px">можем помочь необычно отметить</p>
+  <h2 class="party-h"><img src="img/h-celebration.svg" alt="Праздник" width="875" height="100"></h2>
+  <div class="drops">
+  <div class="drop" style="left:61px;top:262px;width:557px;height:610px;--r:-15.29deg">
+    <div class="note"><b class="t38">чаепитие</b><ul><li>после мастер-класса отдых с чаепитием</li><li>предоставим посуду, чайничек и печеньки</li></ul></div></div>
+  <div class="drop" style="left:803px;top:268px;width:542px;height:598px;--r:13.06deg">
+    <div class="note"><b class="t38">проектор и музыка</b><ul><li>у нас есть колонки и виниловый проигрыватель для уютной атмосферы</li><li>предоставим проектор с большим экраном для видеосопровождения</li></ul></div></div>
+  <div class="drop" style="left:300px;top:259px;width:545px;height:601px;--r:13.53deg">
+    <div class="note"><b class="t38">гости</b><ul><li>в нашем пространстве можем разместить до 15 человек</li><li>убедимся, чтобы всем было комфортно и уютно</li></ul></div></div>
+  <div class="drop" style="left:501.5px;top:276px;width:437px;height:513px;--r:0deg">
+    <div class="note"><b class="t38">мастер-класс</b><ul><li>проведём групповой мастер-класс под нужное мероприятие</li><li>можно выбрать тему из нашего каталога или предложить свою</li><li>с нас все необходимые материалы и чёткие инструкции</li><li>наши мастера проведут занятие с заботой к каждому участнику</li></ul></div></div>
+  </div>
+  <button class="btn coral party-btn" data-form="мероприятие">оставить заявку</button>
+</section>
+
+<div class="ticker" data-word="слепок важного дня"></div>
+
+<section class="cert" id="cert">
+  <div class="cert-art d">
+    <img src="img/cx-vase.webp" alt="" style="left:1140px;top:0;width:300px;height:414.3px">
+    <img src="img/cx-plate.webp" alt="" style="left:697px;top:442px;width:412.4px;height:211.4px">
+    <img src="img/cx-cup.webp" alt="" style="left:736px;top:81px;width:589.5px;height:533.3px">
+    <img src="img/cx-bowl.webp" alt="" style="left:1077px;top:360px;width:363.3px;height:293.3px">
+  </div>
+  <img class="cert-frame d" src="img/cert-frame.svg" alt="" width="1446" height="656">
+  <h2 class="cert-h d"><img src="img/h-certificate.svg" alt="Сертификат" width="1091" height="98"></h2>
+  <p class="t38 cert-text d">подари близким запись на любой мастер-класс или курс</p>
+  <button class="btn coral cert-btn d" data-form="сертификат">подарить</button>
+  <div class="mo m-cert">
+    <img class="m-cert-art" src="img/m-cert-art.webp" alt="" width="361" height="253">
+    <img class="m-cert-frame" src="img/m-cert-frame.svg" alt="">
+    <img class="m-cert-h" src="img/h-certificate.svg" alt="Сертификат" width="343" height="31">
+    <div class="m-cert-bottom"><p class="t28">запись на любой мастер-класс или курс</p><button class="btn coral" data-form="сертификат">подарить</button></div>
+  </div>
+</section>
+
+<!-- reviews: a pile of notes, click to put the top one to the back -->
+<section class="reviews" id="reviews">
+  <h2 class="h2" style="top:39px"><img src="img/h-reviews.svg" alt="Отзывы" width="742" height="98"></h2>
+  <div class="pile" id="pile">
+    <article class="rev"><b class="t38">мк ложки</b><p>просто восторг! посетила мастер-класс впервые и осталась в полном восторге. мастер очень внимательно относится к каждому ученику, терпеливо объясняет все тонкости работы с глиной. глина оказалась удивительно податливым материалом, а атмосфера в студии как дома уютной. обязательно приду ещё!</p></article>
+    <article class="rev"><b class="t38">свидание</b><p>никогда не думала, что работа с глиной может быть настолько расслабляющей. процесс лепки оказался настоящей медитацией: все мысли о работе и проблемах растворились. моё первое керамическое изделие получилось неидеальным, но очень душевным. спасибо за такой чудесный опыт!</p></article>
+    <article class="rev"><b class="t38">мк боул</b><p>привела на мастер-класс дочь-подростка, и мы обе получили огромное удовольствие. преподаватель создал такую дружелюбную атмосферу, что даже самые стеснительные участники быстро раскрепостились. теперь планируем прийти на следующий мастер-класс всей семьёй!</p></article>
+    <article class="rev"><b class="t38">pro курс</b><p>вчера завершила курс для продолжающих и просто в восторге! уровень преподавания на высоте, каждый урок приносил новые открытия и техники, которые сразу же получалось применять на практике. особенно ценно, что преподаватель помогал раскрыть собственный стиль в работе с керамикой!</p></article>
+  </div>
+  <span class="badge blue wobble" style="left:608px;top:90px"><img src="img/badge-star-review.svg" alt=""><b class="t28">ваши<br>слепки</b></span>
+</section>
+
+<div class="ticker line-tb" data-word="слепок"></div>
+
+<section class="together">
+  <h2 class="h2" style="top:39px"><img class="d" src="img/h-together.svg" alt="Хочешь так же?" width="1348" height="98"><img class="mo" src="img/m-h-together.svg" alt="Хочешь так же?" width="252" height="80"></h2>
+  <div class="tg-rows"><p class="t38 tg-row" style="top:179px"></p><p class="t38 tg-row" style="top:375px"></p><p class="t38 tg-row" style="top:571px"></p></div>
+  <span class="btn peach tg-pill static" style="left:-94px;top:219px;width:567px">давай</span>
+  <span class="btn peach tg-pill static" style="left:849px;top:274px;width:568px">слепим</span>
+  <span class="btn peach tg-pill static" style="left:145px;top:436px;width:470px">вместе</span>
+  <span class="btn peach tg-pill static" style="left:957px;top:423px;width:213px">?</span>
+  <button class="btn coral tg-btn" data-form>записаться</button>
+</section>
+
+<section class="where" id="where">
+  <div class="map" id="map" aria-hidden="true"></div>
+  <div class="vrule-where"></div>
+  <h2 class="where-h"><img class="d" src="img/h-where.svg" alt="Где мы лепим?" width="661" height="215"><img class="mo" src="img/m-h-where.svg" alt="Где мы лепим?" width="242" height="79"></h2>
+  <div class="where-info">
+    <div><b class="t38">график:</b><p class="t28">ежедневно<br>с 12:00 до 21:00</p></div>
+    <div><b class="t38">адрес:</b><p class="t28">санкт-петербург,<br>глиняная 7/3</p></div>
+    <div><b class="t38">контакты:</b><p class="t28">slepok@example.com<br>+7 (000) 123-45-67</p></div>
+  </div>
+  <div class="where-ph">
+    <figure class="ph"><img src="img/photo-3.webp" alt="" style="width:109.78%;height:148.3%;left:-4.89%;top:-17.55%"></figure>
+    <figure class="ph"><img src="img/photo-1.webp" alt="" style="width:181.72%;height:109.11%;left:-7.96%;top:-4.56%"></figure>
+    <figure class="ph"><img src="img/photo-4.webp" alt="" class="cover"></figure>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="mo m-foot">
+    <button class="btn milk" data-form>записаться</button>
+    <div class="m-foot-cols">
+      <nav><a href="#mk">мастер-классы</a><a href="#courses">курсы</a><a href="#party">мероприятия</a><a href="#cert">сертификат</a></nav>
+      <p>санкт-петербург<br>глиняная 7/3<br>slepok@example.com<br>+7 (000) 123-45-67</p>
+      <p class="m-soc"><img src="img/m-soc-1.svg" alt="" width="32" height="32"><img src="img/m-soc-2.svg" alt="" width="32" height="32"><img src="img/m-soc-3.svg" alt="" width="32" height="32"></p>
+    </div>
+    <img src="img/m-h-footer.svg" alt="Слепок" width="338" height="51">
+  </div>
+  <div class="d foot-d">
+  <p class="t28" style="left:24px;top:38px">почта</p>
+  <p class="t38" style="left:24px;top:71px">slepok@example.com</p>
+  <p class="foot-soc" style="left:24px;top:137px"><img src="img/vktg.svg" alt="VK TG" width="189" height="38"></p>
+  <p class="t28" style="left:495px;top:38px">телефон</p>
+  <p class="t38" style="left:495px;top:71px">+7 (000) 123-45-67</p>
+  <p class="t28" style="left:495px;top:137px">ежедневно 12:00–21:00</p>
+  <nav class="foot-nav t28"><a href="#mk">мастер-классы</a><a href="#courses">курсы</a><a href="#party">мероприятия</a><a href="#cert">сертификат</a></nav>
+  <button class="btn coral" style="position:absolute;left:1084px;top:38px;width:329px" data-form>записаться</button>
+  <p class="t28" style="left:1084px;top:138px">политика конфиденциальности</p>
+  <img class="foot-mark" src="img/h-footer.svg" alt="Слепок" width="1389" height="208">
+  </div>
+</footer>
+<div class="credit t28"><span>учебный проект: студия, адрес и контакты вымышлены</span><a href="https://www.behance.net/sashagrigori" target="_blank" rel="noopener">дизайн и вёрстка — александра зянчурина ↗</a></div>
+
+<!-- form and thank-you window -->
+<div class="modal" id="modal" hidden>
+  <form class="form" id="form" novalidate>
+    <button type="button" class="x" data-close aria-label="закрыть"><img src="img/close.svg" alt="" width="32" height="32"></button>
+    <p class="t38 form-h">заполни заявку и мы позвоним в течение 15 минут</p>
+    <div class="fields">
+      <div class="select" id="select">
+        <button type="button" class="field sel-btn t28" aria-haspopup="listbox"><span id="selVal">вид услуги</span><img src="img/chevron.svg" alt="" width="25" height="25"></button>
+        <ul class="sel-list t28" role="listbox"><li>мастер-класс</li><li>курс</li><li>мероприятие</li><li>сертификат</li><li>другое</li></ul>
+      </div>
+      <label><span class="t28">твоё имя и фамилия</span><input class="field t28" name="name" placeholder="иванов иван" autocomplete="name" required></label>
+      <label><span class="t28">номер телефона</span><input class="field t28" name="phone" id="phone" placeholder="+7 (___) ___-__-__" inputmode="tel" autocomplete="tel" required></label>
+      <label><span class="t28">email</span><input class="field t28" name="email" type="email" placeholder="your@email.com" autocomplete="email"></label>
+    </div>
+    <button class="btn coral form-btn" type="submit">записаться</button>
+    <p class="t28 form-note">оставляя заявку, вы принимаете условия<br>политики конфиденциальности</p>
+  </form>
+  <div class="thanks" id="thanks" hidden>
+    <button type="button" class="x" data-close aria-label="закрыть"><img src="img/close.svg" alt="" width="32" height="32"></button>
+    <div class="thanks-row">
+      <div><img src="img/thanks-title.svg" alt="Спасибо за запись!" width="341" height="78"><p class="t28">позвоним по указанному номеру в течение 15 минут<br><small>(это учебный проект, заявка никуда не ушла)</small></p></div>
+      <div class="thanks-cup"><img src="img/cup.webp" alt=""></div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
