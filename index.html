@@ -9,10 +9,10 @@
 <link rel="icon" href="img/star-42.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=3">
 <script>
   // the layout is drawn on a fixed 1440 (desktop) or 375 (phone) canvas and zoomed to the window width
-  (function(){ const r=document.documentElement; function fit(){ const w=r.clientWidth, m=w<760; r.classList.toggle("m",m); r.style.setProperty("--z", m ? Math.min(w/375,1.8) : w/1440); } fit(); addEventListener("resize",fit); })();
+  (function(){ const r=document.documentElement; function fit(){ const w=r.clientWidth, m=w<760; r.classList.toggle("m",m); r.style.setProperty("--z", m ? w/375 : w/1440); } fit(); addEventListener("resize",fit); })();
 </script>
 </head>
 <body>
@@ -250,6 +250,6 @@
   </div>
 </div>
 
-<script src="script.js"></script>
+<script src="script.js?v=2"></script>
 </body>
 </html>
