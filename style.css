@@ -238,9 +238,10 @@ html.ready .hero-cup:not(:hover) { transition-delay:0s; } .hero-side { transitio
 .thanks-row { display:flex; align-items:center; gap:24px; }
 .thanks-row > div:first-child { display:flex; flex-direction:column; gap:16px; width:342px; }
 .thanks-row p { width:324px; } .thanks-row small { display:block; margin-top:10px; font-size:20px; color:rgba(16,16,16,.5); }
-.thanks-cup { position:relative; width:189px; height:154px; overflow:hidden; }
-.thanks-cup img { position:absolute; width:110.82%; height:110.51%; left:-6.59%; top:-5.25%; max-width:none; object-fit:cover; animation:spin-y 2.6s ease-in-out infinite; }
-@keyframes spin-y { 50% { transform:rotate(-8deg) translateY(-6px); } }
+/* the whole cup, earring included; it sways inside the window, not out of it */
+.thanks-cup { position:relative; flex:none; width:189px; height:154px; }
+.thanks-cup img { position:absolute; inset:6px; width:calc(100% - 12px); height:calc(100% - 12px); object-fit:contain; transform-origin:50% 80%; animation:spin-y 2.6s ease-in-out infinite; }
+@keyframes spin-y { 50% { transform:rotate(-6deg) translateY(-4px); } }
 
 .drops { position:absolute; inset:0; }
 .party .kicker, .party-h { z-index:1; }
