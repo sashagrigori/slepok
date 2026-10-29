@@ -59,6 +59,9 @@ section, .ticker, .foot { position:relative; overflow:hidden; scroll-margin-top:
 .card-s > span, .card-m > span { display:flex; flex-direction:column; align-items:center; gap:8px; padding:10px; border-top:2px solid var(--ink); white-space:nowrap; }
 .card-s b, .card-m b, .card-b b { font-weight:400; } .card-s i, .card-m i, .card-b i { font-style:normal; }
 .card-s:hover, .card-m:hover, .card-b:hover { transform:translateY(-6px) rotate(-1deg); }
+/* phones: a tap counts as hover and the lift sticks, so cards stay still */
+html.m .card-s:hover, html.m .card-m:hover, html.m .card-b:hover { transform:none; }
+@media (hover:none) { .card-s:hover, .card-m:hover, .card-b:hover { transform:none; } }
 .hero-line { left:-28px; top:766px; width:1468px; border-top:2px solid var(--ink); }
 .hero-info { left:24px; top:790px; width:1392px; display:flex; align-items:center; justify-content:space-between; }
 .hero-info span { height:42px; }
